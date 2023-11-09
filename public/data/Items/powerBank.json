@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Cougar VTE600",
+    "price": 3800,
+    "info": "600 Вт, 80+ Bronze, EPS12V, APFC, 20 + 4 pin, 1x 4+4 pin CPU, 6 шт SATA, 2x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/31dc2f391a1990b15a20a92206515656/45791c9159dd8fab485eba5e078128899391441495bb86b1182995ca6d7090c9.jpg.webp"
+  },
+  {
+    "name": "ExeGate AAA400",
+    "price": 850,
+    "info": "400 Вт, EPS12V, 20 + 4 pin, 1x 4 pin CPU, 2 шт SATA",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/3acc7bd201fbf5d94df6a75b36de54b3/555b7a6ee570b22cc0298d207e2ba19b344755b52626d28e15a94463061f0f76.jpg.webp"
+  },
+  {
+    "name": "be quiet SYSTEM POWER 9 700W",
+    "price": 5800,
+    "info": "700 Вт, 80+ Bronze, EPS12V, APFC, 20 + 4 pin, 1x 4+4 pin CPU, 6 шт SATA, 4x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/220d27aee410e4cd24672b62c3796161/662715e09a74b7613a2b1b6994ceaf2329a7dad92176f6aa99af15b09748e203.jpg.webp"
+  },
+  {
+    "name": "DEEPCOOL DQ750",
+    "price": 9350,
+    "info": "750 Вт, 80+ Gold, EPS12V, APFC, 20 + 4 pin, 2x 4+4 pin CPU, 8 шт SATA, 4x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/dddcee3ee95ad4e130dcaa9522db2af3/b5ac31867a4d4b6f5f3ac0b9b9e6f20d53b1e791fa5de34ee22b4003b27c6d86.jpg.webp"
+  },
+  {
+    "name": "AeroCool VX PLUS 350W",
+    "price": 1500,
+    "info": "350 Вт, 20 + 4 pin, 1x 4+4 pin CPU, 2 шт SATA",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/1b2a9a4906f9f4610226d38ac2c30563/8b6a97deb216c70e03ec97ef4932e0cc41891cad2c714e33137c0365bb0cdc84.jpg.webp"
+  },
+  {
+    "name": "Super Flower Leadex Platinum 2000W",
+    "price": 57000,
+    "info": "2000 Вт, 80+ Platinum, EPS12V, APFC, 20 + 4 pin, 2x 4+4 pin CPU, 16 шт SATA, 4x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/256b7753682dca4a4af4d115ef8e98c9/61226a3fbf3a6e22213f8a159cef1a3b7ccde9f0983cc7b1ef980483621b2847.jpg.webp"
+  },
+  {
+    "name": " AeroCool ECO 450W",
+    "price": 1800,
+    "info": "450 Вт, 20 + 4 pin, 1x 4 pin CPU, 2 шт SATA, 1x 6 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/3f1718d3a831c800e967176702290ce4/b6b8aba84af2e357d83077c1fd1bf25b443b2e0e811674e15966ae8f5d7f44da.jpg.webp"
+  },
+  {
+    "name": "ZALMAN Wattbit II 400W",
+    "price": 2500,
+    "info": "400 Вт, EPS12V, 20 + 4 pin, 1x 4+4 pin CPU, 4 шт SATA, 2x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/cf59163e87548893d9f297f377e568f5/33697bff5b43bdcdb0756910adf8cea1915306c76f925d3e8f83fd19ae697870.jpg.webp"
+  },
+  {
+    "name": "ZALMAN Wattbit II 500W",
+    "price": 2700,
+    "info": "500 Вт, EPS12V, 20 + 4 pin, 1x 4+4 pin CPU, 4 шт SATA, 2x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/878f24d70962134cea6e27f7e8cbf435/135c2703fc500b545c1d190590e19f862aaa2d20190480d23d51342b4d16afbe.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE AORUS P1200W",
+    "price": 30900,
+    "info": "1200 Вт, 80+ Platinum, EPS12V, APFC, 20 + 4 pin, 2x 4+4 pin CPU, 16 шт SATA, 10x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/cfd6e7037e9f6221c09085d752d3ee4b/b0f0582e71ff2d18a74ff20f1c6e4ae965330163f5414df4d557f08d90ab343b.png.webp"
+  },
+  {
+    "name": "AeroCool VX PLUS 700W",
+    "price": 3300,
+    "info": "700 Вт, EPS12V, APFC, 20 + 4 pin, 1x 4+4 pin CPU, 6 шт SATA, 2x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/add8bec1b7fc5b6012eddc835e676e4d/ecfc631b2ff2378b5d91ec7a16343e5607bc8170cf0b0236a8afa71170aea4ef.jpg.webp"
+  },
+  {
+    "name": "ZALMAN Watttera 1200W",
+    "price": 23000,
+    "info": "1200 Вт, 80+ Gold, APFC, 20 + 4 pin, 2x 4+4 pin CPU, 12 шт SATA, 8x 6+2 pin PCI-E",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/4a38f8487568587e6a26f384999ae83f/398efbd3884691432e41f354ddeeb3bd60d8cbe89c0a0d03eeec82b9e8428bf8.jpg.webp"
+  }
+]

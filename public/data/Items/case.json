@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Cooler Master MasterCase H500M",
+    "price": 17300,
+    "info": "Mid-Tower, E-ATX, Micro-ATX, Mini-ITX, Standard-ATX, USB 3.2 Gen1 Type-A, USB 3.2 Gen2 Type-C",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2b917021f5ab6f7f0354772b8531e263/cb9507c2b51b0335fdde4361dfb33e1be0be325afbf214a40c2daef427f44120.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE AORUS C300 GLASS",
+    "price": 9750,
+    "info": "Mid-Tower, Micro-ATX, Mini-ITX, Standard-ATX, USB 3.2 Gen1 Type-A, USB 3.2 Gen2 Type-C",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/6af3f4ad6d1f721a5321940bf4710186/acd31dfe321bd5e41dfa294260483325946e672b097530f30254f10756b3a418.png.webp"
+  },
+  {
+    "name": "Deepcool MATREXX 55 MESH ADD-RGB 4F",
+    "price": 5950,
+    "info": "Mid-Tower, E-ATX, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/8e0f02d3af3884ca80a3cb4f4f59bf1d/88835c2a5c794568ada606ee5b8f9275e4628235eb7ebc9cce0119c4e4ae02d0.jpg.webp"
+  },
+  {
+    "name": "AeroCool CS-105",
+    "price": 2500,
+    "info": "Mini-Tower, Micro-ATX, Mini-ITX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/a3fb8f4588b709ffd9971fe2808f0a70/d1b615ddcbcedaa8c21b544ef18fcb8c178dd0c69a44cde1c61a41d04352cf14.jpg.webp"
+  },
+  {
+    "name": "Cooler Master COSMOS C700M",
+    "price": 40600,
+    "info": "Full-Tower, E-ATX, Micro-ATX, Mini-ITX, Standard-ATX, USB 3.2 Gen1 Type-A, USB 3.2 Gen1 Type-C",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/0/0/564b05d5f826d96a6d642bcf64a094b7/c9dd2ffbcb705d06a052b3849246836fb55548869e2acf6182558b8a65f497a7.jpg.webp"
+  },
+  {
+    "name": "Cougar MX330-F",
+    "price": 4300,
+    "info": "Mid-Tower, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/62e57e82f1a449ee7d52f3926de730fd/24442128f4eae88af30e99321c3aabace1896384f421a2b0c884da6f26e347c6.jpg.webp"
+  },
+  {
+    "name": "ZALMAN i3 Edge",
+    "price": 3650,
+    "info": "Mid-Tower, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/4d0827b7cd129ea50167b813e21442a2/7e2b57d544ef0f4bb233bad8d2f49e43b215af66a1bf07c42dfeedf56687212a.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE AORUS C700 GLASS",
+    "price": 51000,
+    "info": "Full-Tower, E-ATX, Micro-ATX, Mini-ITX, Standard-ATX, USB 3.2 Gen1 Type-A, USB 3.2 Gen2 Type-C",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/7032b32d96203a4d4e81ca1b53e5fb4d/b5d3b01c802900753b051dc4226b4a022534cef722ff88607377e238fa209076.jpg.webp"
+  },
+  {
+    "name": "Corsair Graphite Series 780T",
+    "price": 18500,
+    "info": "Full-Tower, E-ATX, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/7962214f99b29c95b4a5b35be4d60c4c/5c72294c19e10372db0160d4fc14ee23fd81a90ec4fd910abebcf565150e5a9d.jpg.webp"
+  },
+  {
+    "name": "DEXP DC-202M",
+    "price": 1600,
+    "info": "Mini-Tower, Micro-ATX, Mini-ITX, USB 2.0 Type-A",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/7d5804a92b2fab2a46c0177f2feb5618/b9da240b1fb0f93f08d19636e0c3dd8e43ad14dae8429231c1b6c271a4de8b86.jpg.webp"
+  },
+  {
+    "name": "be quiet! PURE BASE 500DX BLACK",
+    "price": 10400,
+    "info": "Mid-Tower, Micro-ATX, Mini-ITX, Standard-ATX, USB 3.2 Gen1 Type-A, USB 3.2 Gen1 Type-C",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/625787a16f73325b0ede50d6465a1abc/bbb7b6d781e3f4b113811098e72dddfcd252f5a659fc72667bab9aae3edea766.jpg.webp"
+  },
+  {
+    "name": "ZALMAN Z-Machine 500",
+    "price": 95000,
+    "info": "Mid-Tower, E-ATX, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A, USB 3.2 Gen2 Type-C",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/fc7e0a185f2a873ae31c689158923524/6211fa2cc7b93c75d56181ecd06faf6fe2209e24be6c36d0004683e193d2417b.jpg.webp"
+  }
+]

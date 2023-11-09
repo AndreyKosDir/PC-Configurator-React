@@ -1,0 +1,68 @@
+[
+  {
+    "name": "AMD Athlon X4 950 OEM",
+    "price": 4000,
+    "info": "AM4, 4 x 3.5 ГГц, L2 - 2 МБ, 2хDDR4-2400 МГц, TDP 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/320/250/e9d4f220abb13ffd1a2d90608ee90a1f/6b7fc4de506bbb7bd475d8dc48ae7483dd60cba6d7a04d00511efaef9e13d932.jpg"
+  },
+  {
+    "name": "Intel Core i3-10100 OEM",
+    "price": 9900,
+    "info": "LGA 1200, 4 x 3.6 ГГц, L2 - 1 МБ, L3 - 6 МБ, 2хDDR4-2666 МГц, Intel UHD Graphics 630, TDP 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/406f625d876109751d126cb5dd114338/c05040f3acd015003f9ce5409de4b901235be8d8e7bd74c9bc2bbdb0206a5f6a.jpg.webp"
+  },
+  {
+    "name": "Intel Core i7-10700K OEM",
+    "price": 28600,
+    "info": "LGA 1200, 8 x 3.8 ГГц, L2 - 2 МБ, L3 - 16 МБ, 2хDDR4-2933 МГц, Intel UHD Graphics 630, TDP 125 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/a8415976695dc360eae46c34f67cdfc9/50894bf2d7f09fffe5986451bb914db9f045c2dd5d5889936490d7d48a541fdd.jpg.webp"
+  },
+  {
+    "name": "AMD Ryzen 5 5600X OEM",
+    "price": 26000,
+    "info": "AM4, 6 x 3.7 ГГц, L2 - 3 МБ, L3 - 32 МБ, 2хDDR4-3200 МГц, TDP 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/c9e42b9aeec4a14c15a65f384ec41722/cca2b331b0947fe2973ee287baea67acb2f568793792d5fe6c2451239a7a9ea0.jpg"
+  },
+  {
+    "name": "Intel Core i9-12900K OEM",
+    "price": 53600,
+    "info": "LGA 1700, 8 x 3.2 ГГц, L3 - 30 МБ, 2хDDR4, DDR5-4800 МГц, Intel UHD Graphics 770, TDP 125 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/6cd808cd801001442e3cc138f46e2f1a/e8056114b3ba67dc57d8c73df9571ebe96354068f23b33df0afb2eedb1090298.jpg.webp"
+  },
+  {
+    "name": "Intel Core i5-10400F OEM",
+    "price": 11900,
+    "info": "LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2хDDR4-2666 МГц, TDP 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7d23e73f88c43892ad26d704d40fe59b/e14519811e82129f98e024d17552893ca1471b3c1bd68fb49705aed6b94af052.jpg.webp"
+  },
+  {
+    "name": "AMD Ryzen 5 3600 OEM",
+    "price": 20400,
+    "info": "AM4, 6 x 3.6 ГГц, L2 - 3 МБ, L3 - 32 МБ, 2хDDR4-3200 МГц, TDP 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/6e55c08c071d9744dba9a9582eafd812/fc1ee4a47dc4a1740799e996bf0d478f8908764c5f55f176f6b0bc0ca5f5eef2.jpg.webp"
+  },
+  {
+    "name": "AMD Ryzen Threadripper 3990X OEM",
+    "price": 350000,
+    "info": "sTRX4, 64 x 2.9 ГГц, L2 - 32 МБ, L3 - 256 МБ, 4хDDR4-3200 МГц, TDP 280 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/d3e56285b570c9c598ed95fd1604bf95/87d5a23419dd6eb7292e0ee4fb80e6bc423b22cadda1c5fe340d8ed2ace16da4.jpg.webp"
+  },
+  {
+    "name": "Intel Core i9-10980XE OEM",
+    "price": 87000,
+    "info": "LGA 2066, 18 x 3 ГГц, L2 - 18 МБ, L3 - 24.75 МБ, 4хDDR4-2933 МГц, TDP 165 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/bbbd5185c2b52b66c1bbb51308721826/12d89f86a4f3d3b2b02e661b2a0fb2c777ff0fec9fed13898ae19125cc774a9c.jpg.webp"
+  },
+  {
+    "name": "AMD Ryzen Threadripper 3960X OEM",
+    "price": 121000,
+    "info": "sTRX4, 24 x 3.8 ГГц, L2 - 12 МБ, L3 - 128 МБ, 4хDDR4-3200 МГц, TDP 280 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/f1dec2a96e13c06bfa116e418cb0d1b2/a1d31d2b0ebbd41407771e33b27a647c70b3b4ed912dceed2a4b16cfabed4e10.jpg.webp"
+  },
+  {
+    "name": "Intel Core i5-11400 OEM",
+    "price": 16000,
+    "info": "LGA 1200, 6 x 2.6 ГГц, L2 - 3 МБ, L3 - 12 МБ, 2хDDR4-3200 МГц, Intel UHD Graphics 730, TDP 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/0f40344f7ed51137091451d8528768f9/b9a854def9a93f85bcd49da0a731d930c58744a32cef1d27ac424d0c15c5e5b5.jpg.webp"
+  }
+]

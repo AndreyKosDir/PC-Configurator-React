@@ -1,0 +1,68 @@
+[
+  {
+    "name": "480 ГБ 2.5\" SATA накопитель Kingston A400",
+    "price": 3750,
+    "info": "SATA III, чтение - 500 Мбайт/сек, запись - 450 Мбайт/сек, Phison PS3111-S11, 3D NAND 3 бит TLC",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/b8b818b4990499fb4f807c357e90f3b7/8dd481b72596e54ab6a3562b5b1304e0ef2bd81f0bc274e1622287eec31eb1e9.jpg.webp"
+  },
+  {
+    "name": "500 ГБ 2.5\" SATA накопитель Samsung 870 EVO",
+    "price": 6750,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 530 Мбайт/сек, Samsung MKX, 3D NAND 3 бит MLC (TLC)",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/aae5ca78fef05b60f2e9c134442553ca/7c45af67ae6ef9bb14ac8baf421bf40edb7d2d82540cc0892b7dcb8f0c3033b1.jpg.webp"
+  },
+  {
+    "name": "480 ГБ 2.5\" SATA накопитель Crucial BX500",
+    "price": 4000,
+    "info": "SATA III, чтение - 540 Мбайт/сек, запись - 500 Мбайт/сек, Silicon Motion SM2258XT, 3D NAND",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/623794925320d923608df358efc661fa/72dc515e184b494ae153d79b838112fd29af6fa55578f91437ba155c4b917d8e.jpg.webp"
+  },
+  {
+    "name": "1000 ГБ 2.5\" SATA накопитель Samsung 870 EVO",
+    "price": 12000,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 530 Мбайт/сек, Samsung MKX, 3D NAND 3 бит MLC (TLC)",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/e56adc84e1d4fcd93666d1564fc71188/ae15963547acdf352d0730740f872f306625f88404c3c09b7ce19aefec7e66c1.jpg.webp"
+  },
+  {
+    "name": "120 ГБ 2.5\" SATA накопитель GIGABYTE",
+    "price": 1500,
+    "info": "SATA III, чтение - 500 Мбайт/сек, запись - 380 Мбайт/сек, Phison PS3111-S11, 3D NAND 3 бит TLC",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/16eef95e28f973bf50fe121d059e83a1/3e4ba777ac60c095922036b08c6bff77f683d50985174bf9aeff1fa8b7c45e0c.jpg.webp"
+  },
+  {
+    "name": "1920 ГБ 2.5\" SATA накопитель Synology SAT5200",
+    "price": 60000,
+    "info": "SATA III, чтение - 530 Мбайт/сек, запись - 500 Мбайт/сек, 3D NAND",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/12dacc0141264f17217af40ae320d4d1/8516ee18a168772c88b8745f14de7bd535858ce5804c7c6ccd941f16931f87cb.jpg.webp"
+  },
+  {
+    "name": "1000 ГБ 2.5\" SATA накопитель WD Blue",
+    "price": 10000,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 530 Мбайт/сек, Marvell 88SS1074, 3D NAND 3 бит TLC",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/73d3984a70a77dca6c62964906beddc6/3824c49939d4fd4fd1fdc9a2f7b8b0104ac87f26ffb0e96669dbba2679781d63.jpg.webp"
+  },
+  {
+    "name": "2000 ГБ 2.5\" SATA накопитель Samsung 870 EVO",
+    "price": 22000,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 530 Мбайт/сек, Samsung MGX, 3D NAND 3 бит MLC (TLC)",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/83b6720826034ea2a6964905e08c5a74/abeb6eb2ac737563381974b2af3761500c54801b920a69f45f1ccab2a11a5aa2.jpg.webp"
+  },
+  {
+    "name": "2000 ГБ 2.5\" SATA накопитель Samsung 870 QVO",
+    "price": 17400,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 530 Мбайт/сек, Samsung MKX, 3D NAND 4 бит MLC (QLC)",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/9ad61309bbb230d4a2787812be09d431/c262bce90241685d7b7dab2ebd54068acbb298026be525ccc5962a82d858e458.jpg.webp"
+  },
+  {
+    "name": "4000 ГБ 2.5\" SATA накопитель Samsung 870 QVO",
+    "price": 36000,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 530 Мбайт/сек, Samsung MKX, 3D NAND 4 бит MLC (QLC)",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/06f8a765afea5ca679da6e083028fca1/fa737a20fcfa7e18d8cb90789d64effdb08ee14a283e830e38cfa798f03bd783.jpg.webp"
+  },
+  {
+    "name": "1920 ГБ 2.5\" SATA накопитель Seagate IronWolf 110",
+    "price": 25000,
+    "info": "SATA III, чтение - 560 Мбайт/сек, запись - 535 Мбайт/сек, Seagate 500021768, 3D NAND 3 бит TLC",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/798739039779c0734496e850fe90bcf8/3c0d62c6159d31b50a9bcb2f7e672e880959e322c485c63d536dffaf90479b4a.jpg.webp"
+  }
+]

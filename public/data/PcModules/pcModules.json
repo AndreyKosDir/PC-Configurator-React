@@ -1,0 +1,65 @@
+[
+  {
+    "id": "case",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Корпус"
+  },
+  {
+    "id": "cpu",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Процессор"
+  },
+  {
+    "id": "fan",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Кулер"
+  },
+  {
+    "id": "hardDisk",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Жесткий диск"
+  },
+  {
+    "id": "motherBoard",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Материнская плата"
+  },
+  {
+    "id": "powerBank",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Блок питания"
+  },
+  {
+    "id": "ramMemory",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Оперативная память"
+  },
+  {
+    "id": "ssd",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "SSD"
+  },
+  {
+    "id": "videoCard",
+    "path": "/Images/modulesIcons",
+    "status": "notActive",
+    "format": "png",
+    "name": "Видеокарта"
+  }
+]

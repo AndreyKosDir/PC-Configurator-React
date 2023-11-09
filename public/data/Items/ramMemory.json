@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Kingston FURY Beast Black 16 ГБ",
+    "price": 6500,
+    "info": "DDR4, 8 ГБx2 шт, 3200 МГц, PC25600, 16-18-18",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/225cc518fc6a53fbc269d803af1a8de3/7b56460c7c2042f71818b8d95f13d8713fa08ac88a38fa3c11011d56c8142fad.jpg.webp"
+  },
+  {
+    "name": "Kingston FURY Renegade RGB 64 ГБ",
+    "price": 28000,
+    "info": "DDR4, 32 ГБx2 шт, 3600 МГц, PC28800, 18-22-22",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/81e5f65c53dadc2504926053762e255a/94a25fcb2605850b7c0e6cb3d47419ae039867e074558e07c2d34997153a3d20.jpg.webp"
+  },
+  {
+    "name": "AMD Radeon R9 Gamer Series 16 ГБ",
+    "price": 5400,
+    "info": "DDR4, 8 ГБx2 шт, 3200 МГц, PC25600, 16-18-18",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/df67c2e3dbc9c9108ad3d3e9ec96b6bc/5d4e29f2d2b0a38f8f74e9c957cf6f77b37c57bedf5e361b3de0b910783fcdd1.jpg.webp"
+  },
+  {
+    "name": "Kingston FURY Beast Black 32 ГБ",
+    "price": 12100,
+    "info": "DDR4, 16 ГБx2 шт, 3200 МГц, PC25600, 16-18-18",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/e709a598fdc60f3033c44b5c3db64cdf/4f7a8f500f1b560e035a5dcc9a74d5771828574da5becf7d74c8d58218203e91.jpg.webp"
+  },
+  {
+    "name": "G.Skill Trident Z5 RGB 32 ГБ",
+    "price": 36000,
+    "info": "DDR5, 16 ГБx2 шт, 5600 МГц, PC44800, 36-36-36-76",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/bedcc3c8bbf4f0c27f41b09b19f34e15/78959d01100d912f9a682767f50dacd72b3355f60660ef5af10eeb80dbe4babe.png.webp"
+  },
+  {
+    "name": "Patriot Viper Steel 64 ГБ",
+    "price": 23800,
+    "info": "DDR4, 32 ГБx2 шт, 3200 МГц, PC25600, 16-20-20-40",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/82c79adc4fd4fd489b0c76a98210b065/9e3ee86d4c65170ec5980b6e534819f76d0b89be9497cc58b62c50c8024772f8.jpg.webp"
+  },
+  {
+    "name": "A-Data XPG Gammix D10 16 ГБ",
+    "price": 5700,
+    "info": "DDR4, 8 ГБx2 шт, 3200 МГц, PC25600, 16-20-20",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/363f8ab43fcd2d432836b356e0375cb8/f13746e1391d09dea80140038891c774f01b65f12b286083478b6d483d0ad213.jpg.webp"
+  },
+  {
+    "name": "Kingston HyperX FURY Black 32 ГБ",
+    "price": 16600,
+    "info": "DDR4, 16 ГБx2 шт, 3733 МГц, PC29800, 19-23-23-32",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7980eca228d79e05fcbe62fcd054de7f/a6bee833312219bc8f842a1615e5feb1b284708912acfa6c148899726299217b.jpg.webp"
+  },
+  {
+    "name": "Kingston FURY Renegade 32 ГБ",
+    "price": 14000,
+    "info": "DDR4, 16 ГБx2 шт, 3600 МГц, PC28800, 16-20-20",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/97b1ed48f65366a83a93be1a66ac82e5/17cf4a2b52748edde1d35970fa9d5605951fcd82cd67867694b377a40205a891.jpg.webp"
+  }
+]

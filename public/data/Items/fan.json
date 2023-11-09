@@ -1,0 +1,74 @@
+[
+  {
+    "name": "DEEPCOOL GAMMAXX 300",
+    "price": 1500,
+    "info": "Основание - алюминий/медь, 1600 об/мин, 21 дБ, 4-pin, 130 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/50e580e365b4e82605c837ef03318f79/52078f4d628f603a9df12da37df0d64342f41f5b06229517ee42238d5aa75f6b.jpg.webp"
+  },
+  {
+    "name": "be quiet! DARK ROCK PRO 4",
+    "price": 8000,
+    "info": "Основание - медь, 1500 об/мин, 24.3 дБ, 4-pin, 250 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/a9ecc13e7d2a59ecbe1d0dedb7a2804b/c39292f659c144c32a0ee2fea29b4c54a46c81fb0681c3104917454f64234a77.jpg.webp"
+  },
+  {
+    "name": "AeroCool Cylon 4",
+    "price": 2650,
+    "info": "Основание - алюминий/медь, 1800 об/мин, 26 дБ, 4-pin, подсветка, 145 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/7249e5d00bd298a49b95272c0d15b56e/3390504d4a161120d7ba4699df3c4e72061c88934a19a4f18370c1b5d2ed65a1.jpg.webp"
+  },
+  {
+    "name": "DEEPCOOL Gamma Archer",
+    "price": 600,
+    "info": "Основание - алюминий, 1600 об/мин, 26.1 дБ, 3-pin, 95 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/4d9cec8fd2ef71a6071e91f63a2c80d2/52ec335361582c7c0d3defeb5d239150c85eec1bfed5ce6e57e1549f7c8bf72a.jpg.webp"
+  },
+  {
+    "name": "GamerStorm Lucifer V2",
+    "price": 3500,
+    "info": "Основание - медь, 1400 об/мин, 31 дБ, 4-pin, 200 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/c862636ce7341ffdd640e92f0c3fc635/6234dab6232264dd840e577dc6bdc6dbe077e460468d8fa0a54349d2dff2943f.jpg.webp"
+  },
+  {
+    "name": "Noctua NH-D15",
+    "price": 10000,
+    "info": "Основание - алюминий, 1500 об/мин, 24.6 дБ, 4-pin, 220 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/0d41e351381e82ad944e563cd147a083/4bfee6ca02b813eaf92d800d6845357a2f7b61480cc1912f7539082f11a2726f.jpg.webp"
+  },
+  {
+    "name": "AMD Wraith Stealth",
+    "price": 400,
+    "info": "Основание - алюминий, 2600 об/мин, 30 дБ, 3-pin, 65 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/fee02544499da00e029bb45b1c73a119/581519d5cea6adb5fd4cfdc025f8e8fce4e7d2234515938d5abaefc7863509c3.jpg.webp"
+  },
+  {
+    "name": "ZALMAN CNPS9X Optima",
+    "price": 1700,
+    "info": "Основание - алюминий\\медь, 1500 об/мин, 26 дБ, 4-pin, подсветка, 180 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/bacfe510f2f3ac69351911e71c6e1f2e/4fc6c7d8ec06c5f56c64d531795a5830e01f8722c1ccb452b56696e542212e2b.jpg.webp"
+  },
+  {
+    "name": "GamerStorm Assassin III",
+    "price": 6500,
+    "info": "Основание - медь, 1400 об/мин, 26.8 дБ, 4-pin, 280 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/bcecde2a5b99d4e859b2ac43e0e471c0/56a85d54b88f69a22a087be61f4190583a65338d6b0845be0cde4a7add7c9573.jpg.webp"
+  },
+  {
+    "name": "DEEPCOOL AS500",
+    "price": 4900,
+    "info": "Основание - алюминий\\медь, 1200 об/мин, 26 дБ, 4-pin, подсветка, 220 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/5c51aa2f3d51d797e2ba8e6cf3bd4a85/f3b5dedb8c1d727332112e9fa2325442e5e9a1f0e7fbe32293076f96ab7856b9.jpg.webp"
+  },
+  {
+    "name": "PCCOOLER GI-X4S",
+    "price": 1850,
+    "info": "Основание - алюминий\\медь, 1600 об/мин, 26.5 дБ, 4-pin, подсветка, 145 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/57039cecbe8499f9138c2f53d3007016/9b28c8e4ff0d6a375baa856b8d9ec99066ebd90dfc821d47891318aedb6c7d62.jpg.webp"
+  },
+  {
+    "name": "PCCOOLER GI-H58U CORONA B",
+    "price": 4000,
+    "info": "Основание - алюминий\\медь, 1800 об/мин, 26.5 дБ, 4-pin, подсветка, 240 Вт",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/32be87f6ea24da995a4846d62e4036d8/45ca741b76d84c3b4750bc961ec8cbbbb4c09a4384a37961dfcc51a5b495b0ba.jpg.webp"
+  }
+]

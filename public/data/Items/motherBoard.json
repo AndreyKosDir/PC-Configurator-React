@@ -1,0 +1,62 @@
+[
+  {
+    "name": "GIGABYTE H410M H V3",
+    "price": 5100,
+    "info": "LGA 1200, Intel H510, 2xDDR4-2933 МГц, 1xPCI-Ex16, аудио 7.1, Micro-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/e8fe620de053a8c6a318d781f66923b6/22ef8297914703c94d7180f4556d257d8dbbcff8a5ae663c0e5ac5488c63f9bb.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE B550 AORUS ELITE V2",
+    "price": 11500,
+    "info": "AM4, AMD B550, 4xDDR4-4733 МГц, 3xPCI-Ex16, аудио 7.1, Standard-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/a94091d13e1c46b264e46890eebb71cc/cbeada593290a99b56177e3c496c9ae68eabaa00ef47178f7e303a3ec398b647.png.webp"
+  },
+  {
+    "name": "ASRock B560M Pro4",
+    "price": 8800,
+    "info": "LGA 1200, Intel B560, 4xDDR4-4800 МГц, 2xPCI-Ex16, аудио 7.1, Micro-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/8342f0a0f7ef692543d251262907fc10/47ac8e00fb449addb6916ed23f910212a99955027141690324d8eef0f655f4af.png.webp"
+  },
+  {
+    "name": "GIGABYTE Z690 GAMING X DDR4",
+    "price": 18000,
+    "info": "LGA 1700, Intel Z690, 4xDDR4-5333 МГц, 3xPCI-Ex16, аудио 7.1, Standard-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/c98dc19004dbb1556020b6dec524c6cd/aae881eb490416918bf8c67e8da24bbdb8e86cba849477d1d128890ff8d0015f.jpg.webp"
+  },
+  {
+    "name": "Biostar A68N-2100K",
+    "price": 3000,
+    "info": "BGA 769 (FT3b), AMD A68H, AMD E1-6010 2x1.35 ГГц, 2xDDR3, DDR3L-1333 МГц, 1xPCI-Ex16, аудио 7.1, Mini-ITX",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/2fd78824aafba71638d127b8712f2998/fe54f7cd97c99c07a917a1cb2c82ba2ad390b03c2a00696d61a120c79f107274.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE TRX40 AORUS XTREME",
+    "price": 80000,
+    "info": "sTRX4, AMD TRX40, 8xDDR4-4400 МГц, 4xPCI-Ex16, аудио 7.1, XL-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/a3106e66ff5c0e300c4d3e21bdacebb9/15d06c620a11ad81655d2ab9738317234cbe45de991b874493a6e6f644ae2f1e.png.webp"
+  },
+  {
+    "name": "GIGABYTE GA-A320M-H",
+    "price": 3500,
+    "info": "AM4, AMD A320, 2xDDR4-3200 МГц, 1xPCI-Ex16, аудио 7.1, Micro-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/8ed7ed982051dff8129634aa61752ab5/a36b6586112a06ffc32442056b605f018a281f8fe1cd46e35b6b5fb9ccb16e6c.jpg.webp"
+  },
+  {
+    "name": "ASUS TUF Z390-PLUS GAMING",
+    "price": 14000,
+    "info": "LGA 1151-v2, Intel Z390, 4xDDR4-4266 МГц, 2xPCI-Ex16, аудио 7.1, Standard-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/55cc21d5533ea67485a7db4e0307dd2e/d68ca3536e1ad08177dc9dd7523ce20b61708d974d544e6b368acf4055247feb.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE B560M AORUS ELITE",
+    "price": 10500,
+    "info": "LGA 1200, Intel B560, 4xDDR4-5333 МГц, 2xPCI-Ex16, аудио 7.1, Micro-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/d282239d265d1f242581218c211f1025/2e8b557d44d5404e81f7c9369b92035380aaf84223089668f635e15dbbd8cf8d.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE Z590 GAMING X",
+    "price": 13700,
+    "info": "LGA 1200, Intel Z590, 4xDDR4-5333 МГц, 2xPCI-Ex16, аудио 7.1, Standard-ATX",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2620f0bb56aa445492c0afdea1e6db67/d8f1b9b5279aaf93de8c957833598f88916aef058f1c3e06b274de8a5a85b615.png.webp"
+  }
+]

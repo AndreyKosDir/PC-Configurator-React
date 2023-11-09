@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Palit GeForce RTX 2060 Super Dual",
+    "price": 85000,
+    "info": "PCI-E 3.0, 8 ГБ GDDR6, 256 бит, 1470 МГц - 1650 МГц, DVI-D, DisplayPort, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/cb9a5d62533f08f1ff86a46de289ada2/913b13b0423cc3ef43cffd70a4086ee81d767564572d082f19662ff70e22796c.jpg.webp"
+  },
+  {
+    "name": "Palit GeForce GTX 1660 Ti Dual",
+    "price": 61000,
+    "info": "PCI-E 3.0, 6 ГБ GDDR6, 192 бит, 1500 МГц - 1770 МГц, DVI-D, DisplayPort, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/45ed5681f6623bb3eeb7fb0a8f8fbf06/88ba79000a2598e1ca0b3e94010fc16fc9c375a5cf8d86b4e10f79356ac738c9.jpg.webp"
+  },
+  {
+    "name": "Palit GeForce RTX 3060 Ti DUAL (LHR)",
+    "price": 95000,
+    "info": "PCI-E 4.0, 8 ГБ GDDR6, 256 бит, 1410 МГц - 1665 МГц, DisplayPort x3, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/2ba75d1cbb16a04d7ff689fad4756c50/3c5fc580c9f6591fa59140dd574c28162a1e8d559f82ae135de942df2d10048f.jpg.webp"
+  },
+  {
+    "name": "MSI GeForce 210",
+    "price": 4300,
+    "info": "PCI-E 2.0, 1 ГБ GDDR3, 64 бит, 460 МГц, HDMI, VGA (D-Sub), DVI-I",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/757e3b0ba64cad01d260eaabbdad5655/37a9ddc6abd9161645d3b8a24d249a29fd4dc72aa13e9cd14452f3fb69cfe2d8.jpg.webp"
+  },
+  {
+    "name": "MSI GeForce RTX 3090 GAMING X TRIO",
+    "price": 310000,
+    "info": "PCI-E 4.0, 24 ГБ GDDR6X, 384 бит, 1395 МГц - 1785 МГц, DisplayPort x3, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/c75ba4a5a216e7ceffa751c25d2fdcd2/1f7a4ceb5f283e156cf2fd2ad0bb82166d1d5892a73d1d8fe91d6de58b632e01.png.webp"
+  },
+  {
+    "name": "GIGABYTE GeForce GTX 1650 D6 OC (rev. 2.0)",
+    "price": 33000,
+    "info": "PCI-E 3.0, 4 ГБ GDDR6, 128 бит, 1410 МГц - 1635 МГц, DVI-D, DisplayPort, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/42dc9a9d34d726197ac16cba48848b3a/eed8c63ed292e83e49bf7f9c0e3f6244425a04fc9d9eef4867ad98083ac688fe.jpg.webp"
+  },
+  {
+    "name": "GIGABYTE GeForce GT 1030",
+    "price": 8900,
+    "info": "PCI-E 3.0, 2 ГБ GDDR5, 64 бит, 1227 МГц - 1506 МГц, HDMI, DVI-D",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/1523bbba55121440fa25d37711ae4390/ad2f5bb6713ef4809336608f2ceec63151c5135ccc647fe2b7fbfcf2ae625d42.jpg.webp"
+  },
+  {
+    "name": "Palit GeForce RTX 3080 Ti GamingPro",
+    "price": 205000,
+    "info": "PCI-E 4.0, 12 ГБ GDDR6X, 384 бит, 1365 МГц - 1665 МГц, DisplayPort x3, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/287ac38dcb4613df54bcd8da48eed477/9d58555b338d18884cd0fdfbf494574f86c42bd3da65b1b51a05fa4f1ed85e1e.png.webp"
+  },
+  {
+    "name": "Palit GeForce GTX 1650 Gaming Pro",
+    "price": 32000,
+    "info": "PCI-E 3.0, 4 ГБ GDDR6, 128 бит, 1410 МГц - 1590 МГц, DisplayPort x2, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/d7918b58146fb15f0a6f10485e99b0e1/cdfb564ecd0dc006819c351bd636bc46f7eaa265087299d84a1acd2b510158ec.jpg.webp"
+  },
+  {
+    "name": "Palit GeForce GTX 1660 STORMX",
+    "price": 52000,
+    "info": "PCI-E 3.0, 6 ГБ GDDR5, 192 бит, 1530 МГц - 1785 МГц, DVI-D, DisplayPort, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/a0b1fdfe08cf37a4ca3dd065e7855b10/9bd45244e4b957aed16576f7618e0395c6c89498ed540c92f8d34e4a0c22a3a6.jpg.webp"
+  },
+  {
+    "name": "PowerColor AMD Radeon RX 6700 XT Red Devil",
+    "price": 105000,
+    "info": "PCI-E 4.0, 12 ГБ GDDR6, 192 бит, 2321 МГц - 2622 МГц, DisplayPort x3, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/09c7ed3f05e0f464aeda6eab856a9905/479db7977ab4eb082d3c2cae908847dcd6c934de0bb40c13273489323976476a.jpg.webp"
+  },
+  {
+    "name": "MSI GeForce GT 730 OC V5",
+    "price": 6300,
+    "info": "PCI-E 2.0, 2 ГБ GDDR3, 64 бит, 902 МГц - 1006 МГц, DVI-D, HDMI, VGA (D-Sub)",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/b0c5f14227626a86116ed1e1fbd3dcd4/ec46ff99a9b0306574b446fccc6e6010f75e5b0fe066df82a3fcb94bef62d8c8.jpg.webp"
+  },
+  {
+    "name": "PowerColor AMD Radeon RX 550 Red Dragon LP",
+    "price": 17000,
+    "info": "PCI-E 3.0, 4 ГБ GDDR5, 128 бит, 1000 МГц - 1071 МГц, DVI-D, HDMI",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/1ff660d372f0b537a876ebef8381ffe6/46eef741c727bfc3f27b22de8d765b337d0c9b58e87c3501c89bb02f25061df0.jpg.webp"
+  },
+  {
+    "name": "ASUS ROG Strix GeForce RTX 3090 OC White Edition",
+    "price": 320000,
+    "info": "PCI-E 4.0, 24 ГБ GDDR6X, 384 бит, 1400 МГц - 1890 МГц, DisplayPort x3, HDMI x2",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2ae399e207d3c8b83a2a569fdf3d1bab/4c481560e18fb042855a51b9144d102b3644bea935bd9edb86460e53bfc4de28.jpg.webp"
+  }
+]

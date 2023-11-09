@@ -1,0 +1,68 @@
+[
+  {
+    "name": "1 ТБ Жесткий диск WD Blue",
+    "price": 2850,
+    "info": "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/114e2e7f129f4e7b97378b3a412f34af/552bcbcd920a2aeeb7cbd50355e4a86101749d666c28700415b97eb8bb8ffdab.jpg.webp"
+  },
+  {
+    "name": "2 ТБ Жесткий диск Seagate BarraCuda",
+    "price": 4100,
+    "info": "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 256 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/de95ba9815406787ed459aa01d1f5ab2/388d249f2647a68a2a5281c68ff6df754843fcf3c433ba22ef257b228b715574.jpg.webp"
+  },
+  {
+    "name": "500 ГБ Жесткий диск Toshiba P300",
+    "price": 2800,
+    "info": "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/86c322316ea63265e2b5e691f6d2188d/83dfda98646924fa274430a362ea490d6a15516989cd5685ef90df95277da1c6.jpg.webp"
+  },
+  {
+    "name": "1 ТБ Жесткий диск WD Gold",
+    "price": 6100,
+    "info": "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 128 МБ, RAID Edition",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/18dcdd03cbf9ef894d386f2dbca86a48/4fcdb96d35b3fe54fa87e659900971d6fc2d1e0d058c37f2e513bc6a1f3107b1.jpg.webp"
+  },
+  {
+    "name": "18 ТБ Жесткий диск WD Purple Pro",
+    "price": 50000,
+    "info": "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 512 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/ce2e0e17346d8620995be0fe47f55c81/32992041acae0ee1ae95d0d0e446dfb822e9831be5a45f037551cb2b2580b1ae.jpg.webp"
+  },
+  {
+    "name": "4 ТБ Жесткий диск Seagate BarraCuda",
+    "price": 7000,
+    "info": "SATA III, 6 Гбит/с, 5400 об/мин, кэш память - 256 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/ea4b2bfc3ec0bc15b989593b7e40d4e0/2b11ef501614f5bffe1c29b6421d4cb992a658938c6db9773e8eb0c2fe8df797.jpg.webp"
+  },
+  {
+    "name": "6 ТБ Жесткий диск WD Purple Surveillance",
+    "price": 13600,
+    "info": "SATA III, 6 Гбит/с, 5640 об/мин, кэш память - 128 МБ, RAID Edition",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/8302606017a574cc8ac4938944e055e4/7d2575ad72636706b43e275b4c8562ad6b16cf925f07a00f41fdb379de2308e0.jpg.webp"
+  },
+  {
+    "name": "4 ТБ Жесткий диск WD Red IntelliPower",
+    "price": 8300,
+    "info": "SATA III, 6 Гбит/с, 5400 об/мин, кэш память - 256 МБ, RAID Edition",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/cc9b14b0b7984a015fce4277e6b8af18/5f15f2c2e79078f7af23e12eec206a0d0eba0a794b106c829d93ccc4ec5252ab.jpg.webp"
+  },
+  {
+    "name": "1 ТБ Жесткий диск WD Purple",
+    "price": 4000,
+    "info": "SATA III, 6 Гбит/с, 5400 об/мин, кэш память - 64 МБ, RAID Edition",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/062cebaa07c304453e65990e9d898823/fe5c309b3b260b45baf900975788c3e801c2db1b9a3c0cffabf920b58c38052a.jpg.webp"
+  },
+  {
+    "name": "2 ТБ Жесткий диск Toshiba P300",
+    "price": 3900,
+    "info": "SATA III, 6 Гбит/с, 5400 об/мин, кэш память - 128 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/518fed0c651fd057d8ca4995e8498bbe/58225ec5df4ab0fa4ef6c9fde4ad408c3b018416a7f6f76b5027b28af6001a32.jpg.webp"
+  },
+  {
+    "name": "18 ТБ Жесткий диск WD Ultrastar DC HC550",
+    "price": 36000,
+    "info": "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 512 МБ",
+    "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/c32043ec3427cd5587726d287e378b3c/020268a183b55ccedad0948af713686e089ecc08fa1fb3821cd8096513a40a8f.jpg.webp"
+  }
+]
