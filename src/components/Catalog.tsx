@@ -1,11 +1,11 @@
-import {FormEvent, FormEventHandler, ReactElement, useState} from "react";
+import {FormEvent, ReactElement, useState} from "react";
 import {IItemData} from "../interfaces/Interfaces";
 import CloseButton from "./UI/buttons/CloseButton";
 import SearchPanel from "./UI/SearchPanel";
-import FilterPanel from "./UI/FilterPanel";
+import SortPanel from "./UI/SortPanel";
 import ItemsList from "./List/ItemsList";
 import './Catalog.css';
-import {SortDirection, SortSign, TSign} from "../Constants";
+import {ISortSettings, NameSign, PriceSign, SortDirectionId, TSign} from "../Constants";
 
 interface ICatalogProps {
   catalogData: IItemData[];
@@ -13,9 +13,14 @@ interface ICatalogProps {
   closeCallback: Function;
 }
 
-export default function Catalog({catalogData, partName, closeCallback}: ICatalogProps): ReactElement {
+const defaultSortSetting: ISortSettings = {
+  [PriceSign]: SortDirectionId.Default,
+  [NameSign]: SortDirectionId.Default
+};
 
-  const [sortInfo, setSortInfo] = useState({});
+export default function Catalog({catalogData, partName, closeCallback}: ICatalogProps): ReactElement {
+  // Настройки сортировки
+  const [sortSettings, setSortSettings] = useState<ISortSettings>(defaultSortSetting);
 
   /**
    * Выполнить поисковый запрос
@@ -28,8 +33,9 @@ export default function Catalog({catalogData, partName, closeCallback}: ICatalog
     console.log('Поисковый запрос: ' + inputValue);
   };
 
-  const handleSortingChange = (direction: SortDirection, sign: TSign): void => {
-    // pass
+  const handleSortingChange = (direction: number, sign: TSign): void => {
+    // Запилить тут условие с проверкой = 0, > 0 и < 0 и запуском двух функций сортировки из констант соответственно
+    console.log(direction);
   }
 
   return (
@@ -38,7 +44,7 @@ export default function Catalog({catalogData, partName, closeCallback}: ICatalog
         <h1 className="title">{partName}</h1>
         <CloseButton onClick={closeCallback} className="top-right-corner"/>
         <SearchPanel onSubmitForm={handleSearchQuery}/>
-        <FilterPanel onChangeSorting={handleSortingChange}/>
+        <SortPanel onChangeSorting={handleSortingChange}/>
         <ItemsList />
       </div>
     </div>
