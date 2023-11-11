@@ -1,0 +1,62 @@
+.close-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    background: none;
+    border: none;
+}
+
+.close-button:hover {
+    opacity: 1;
+}
+
+.close-button:before, .close-button:after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 4px;
+    background-color: teal;
+}
+.close-button:before {
+    transform: rotate(45deg);
+}
+.close-button:after {
+    transform: rotate(-45deg);
+}
+
+.text-button {
+    font-family: Arial Narrow, serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: teal;
+    padding: 5px;
+    border: solid 2px teal;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.text-button-raw {
+    font-family: Arial Narrow, serif;
+    border: none;
+    background-color: unset;
+    color: teal;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0;
+}
+
+.text-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: teal;
+
+}
+
+.text-button-raw:hover {
+    cursor: pointer;
+    color: black;
+}

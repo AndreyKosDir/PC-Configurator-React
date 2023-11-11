@@ -1,0 +1,8 @@
+.filter-container {
+    display: flex;
+    width: inherit;
+    margin: 5px 0;
+    height: 25px;
+    align-items: center;
+    justify-content: space-around;
+}

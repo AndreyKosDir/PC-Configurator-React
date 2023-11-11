@@ -34,7 +34,7 @@ body {
   margin-right: 80px;
 }
 
-.details-panel {
+.parts-panel {
   width: 740px;
   height: 800px;
   display: flex;
@@ -55,43 +55,4 @@ body {
 .item-container {
   padding-top: 5px;
   width: 350px;
-}
-
-
-
-
-
-
-
-
-.wrapper-catalog {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(190, 210, 209, 0.5);
-  display: flex;
-  justify-content: center;
-  background-attachment: scroll;
-  overflow: auto;
-}
-
-.catalog {
-  width: 820px;
-  height: 920px;
-  position: absolute;
-  margin-top: 18px;
-  border-radius: 15px;
-  box-shadow: 0 0 3px 1px teal;
-  background-color: #e3ffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-}
-
-.title {
-  margin: 10px 0 10px 0;
-  font-size: 22px;
 }

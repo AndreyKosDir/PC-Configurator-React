@@ -12,7 +12,7 @@ interface IProps {
 
 export default function PartsPanel({parts, openCatalog, itemsData}: IProps): ReactElement {
   return (
-    <div className="details-panel">
+    <div className="parts-panel">
       {
         parts.map((partData) => {
           return (
