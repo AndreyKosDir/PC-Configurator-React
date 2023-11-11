@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 const dataLoader = new DataLoader();
 
 
-dataLoader.loadModulesData().then(() => {
+dataLoader.loadPartsViewData().then(() => {
     root.render(
       <React.StrictMode>
         <App dataLoader={dataLoader}/>

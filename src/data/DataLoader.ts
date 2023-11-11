@@ -1,10 +1,13 @@
+import {IItemData} from "../interfaces/Interfaces";
+
 export interface IDataLoader {
   // getDetailsNames(): TDetailKey[];
-  getDetailsViewData(): IDetailViewData[];
-  loadModulesData(): Promise<void>;
+  getPartsViewData(): IPartViewData[];
+  loadPartsViewData(): Promise<void>;
+  loadPCPartData(partId: TPartId): Promise<IItemData[]>;
 }
 
-const DetailsConfig = {
+const PartsDataConfig = {
   case: './data/Items/case.json',
   cpu: './data/Items/cpu.json',
   fan: './data/Items/fan.json',
@@ -16,18 +19,11 @@ const DetailsConfig = {
   videoCard: './data/Items/videoCard.json'
 };
 
-export interface IDetailData {
-  name: string;
-  price: number;
-  info: string;
-  img: string;
-}
+export type TPartId = keyof typeof PartsDataConfig;
 
-export type TDetailKey = keyof typeof DetailsConfig;
-
-export interface IDetailViewData {
-  id: string;
-  path: string;
+export interface IPartViewData {
+  id: TPartId;
+  imgPath: string;
   status: 'notActive' | 'active';
   format: 'png' | 'svg' | 'jpeg';
   name: string;
@@ -39,7 +35,7 @@ const ModulesDataPath = './data/PcModules/pcModules.json';
  * Загрузчик данных
  */
 export default class DataLoader implements IDataLoader {
-  private _detailsViewData: IDetailViewData[] = [];
+  private _partsViewData: IPartViewData[] = [];
 
   constructor() {
 
@@ -55,23 +51,37 @@ export default class DataLoader implements IDataLoader {
   /**
    * Получить данные для визуального отображения деталей
    */
-  public getDetailsViewData(): IDetailViewData[] {
-    return this._detailsViewData;
+  public getPartsViewData(): IPartViewData[] {
+    return this._partsViewData;
   }
 
   /**
-   * Загрузить данные по модулям
+   * Загрузить данные по отображению деталей
    */
-  public async loadModulesData(): Promise<void> {
+  public async loadPartsViewData(): Promise<void> {
     try {
       const modulesResponse = await fetch(ModulesDataPath);
-      this._detailsViewData = await modulesResponse.json();
-      let asd = 3;
-    } catch (err: unknown) {
-      // TODO: Запилить всплывашку с ошибкой
-      if (err instanceof Error) {
-        console.log(err.message);
-      }
+      this._partsViewData = await modulesResponse.json();
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  // TODO: мб создать AsyncWrapper который будет просто заворачивать тело функции в обертку try/catch
+
+  /**
+   * Загрузить данные для конкретной детали ПК
+   * @param partId
+   */
+  public async loadPCPartData(partId: TPartId): Promise<IItemData[]> {
+    try {
+      const response = await fetch(PartsDataConfig[partId]);
+
+      return await response.json();
+    } catch (err) {
+      console.log(err);
+
+      return [];
     }
   }
 }
