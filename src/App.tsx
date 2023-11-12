@@ -45,6 +45,11 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
     setCurrentPartName('');
   }
 
+  const selectCallback = (item: IItemData): void => {
+    console.log(item);
+    setCatalogData(null);
+  }
+
   return (
     <div id="wrapper">
       <h1>Конфигуратор ПК</h1>
@@ -62,6 +67,7 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
             partName={currentPartName}
             catalogData={catalogData}
             closeCallback={handleCloseCatalog}
+            selectCallback={selectCallback}
         />
       }
     </div>

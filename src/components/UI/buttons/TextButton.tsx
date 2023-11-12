@@ -6,6 +6,7 @@ interface IProps {
   tooltip?: string;
   onlyText?: boolean;
   onClick?: MouseEventHandler;
+  className?: string;
 }
 
 /**
@@ -13,13 +14,22 @@ interface IProps {
  * @param caption - Текст внутри кнопки
  * @param tooltip - Текст всплывающей подсказки при наведении на кнопку
  * @param onlyText - Отображать только текст кнопки
+ * @param onClick - Обработчик клика по кнопке
+ * @param className - Дополнительный класс
  * @constructor
  */
-export default function TextButton({caption, tooltip = '', onlyText = false, onClick}: IProps): ReactElement {
+export default function TextButton(
+  {
+    caption,
+    tooltip = '',
+    onlyText = false,
+    onClick,
+    className = ''
+  }: IProps): ReactElement {
   return (
     <button
       title={tooltip}
-      className={`text-button${onlyText ? '-raw' : ''}`}
+      className={`text-button${onlyText ? '-raw' : ''} ${className}`}
       onClick={onClick}
     >
       {caption}

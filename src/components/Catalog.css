@@ -19,7 +19,7 @@
 
 .catalog {
     width: 820px;
-    height: 920px;
+    height: auto;
     position: absolute;
     margin-top: 18px;
     border-radius: 15px;
@@ -34,4 +34,23 @@
 .title {
     margin: 10px 0 10px 0;
     font-size: 22px;
+}
+
+.page-selector-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-selector {
+    padding: 0 5px
+}
+
+.page-selector.selected {
+    color: black;
+}
+
+.page-selector.selected:hover {
+    color: black;
+    cursor: default;
 }

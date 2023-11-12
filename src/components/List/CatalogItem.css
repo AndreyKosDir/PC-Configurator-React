@@ -1,0 +1,63 @@
+.item-field {
+    width: 800px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3px 1px gray;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item-field:hover {
+    box-shadow: 0 0 3px 1px teal;
+    transform: scale(1.005);
+}
+
+.item-field:hover .price {
+    color: teal;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    -webkit-user-drag: none;
+    object-fit: contain;
+}
+
+.wrapper__detail div {
+    overflow: hidden;
+}
+
+.info {
+    width: 490px;
+    height: 120px;
+}
+
+.info p {
+    padding-left: 10px;
+}
+
+.info p.head {
+    padding-top: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.select {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
