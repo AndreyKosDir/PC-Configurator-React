@@ -37,35 +37,46 @@ export default function ItemsList({catalogItems, itemsCount, selectCallback}: IP
 
   return (
     <div>
-      {paginatedItems[page].map((item) => {
-        // TODO: в JSON файлы с деталями засунуть дополнительное поле id
-        return (
-          <CatalogItem
-            key={item.name + item.price}
-            item={item}
-            selectCallback={selectCallback}
-          />
-        );
-      })}
-      <div className="page-selector-panel">
-        {paginatedItems.map((item, index) => {
-          return (
-            <TextButton
-              onlyText={true}
-              className={`page-selector ${index === page ? 'selected' : ''}`}
-              key={index}
-              caption={`${index + 1}`}
-              onClick={(event) => {
-                event.stopPropagation();
-                handleSelectPage(index);
-              }}
-            />
-          );
-        })}
-      </div>
+      {catalogItems.length
+        ?
+        <>
+          {paginatedItems[page].map((item) => {
+            // TODO: в JSON файлы с деталями засунуть дополнительное поле id
+            return (
+              <CatalogItem
+                key={item.name + item.price}
+                item={item}
+                selectCallback={selectCallback}
+              />
+            );
+          })}
+
+          {/*TODO: !!!!!!!!!!!!!!!!!!!!!если элеменов на одну страницу, то не показывать кнопку*/}
+
+          <div className="page-selector-panel">
+            {paginatedItems.map((item, index) => {
+              return (
+                <TextButton
+                  onlyText={true}
+                  className={`page-selector ${index === page ? 'selected' : ''}`}
+                  key={index}
+                  caption={`${index + 1}`}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    handleSelectPage(index);
+                  }}
+                />
+              );
+            })}
+          </div>
+        </>
+        :
+        <div className="dummy">
+          По вашему запросу ничего не найдено :(
+        </div>
+      }
     </div>
   );
-
 }
 
 /**

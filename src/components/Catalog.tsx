@@ -20,6 +20,9 @@ const defaultSortSetting: ISortSettings = {
   [NameSign]: SortDirectionId.Default
 };
 
+// Количество отображаемых элементов на одной странице каталога
+const ItemsCountPerPage = 6;
+
 export default function Catalog({catalogData, partName, closeCallback, selectCallback}: ICatalogProps): ReactElement {
   // Настройки сортировки
   const [sortSettings, setSortSettings] = useState<ISortSettings>(defaultSortSetting);
@@ -31,11 +34,22 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
    * @param inputValue
    */
   const handleSearchQuery = (event: FormEvent<HTMLElement>, inputValue: string) => {
+    // TODO: доработать панель поиска, чтобы можно было осуществить сброс нажатием на крестик
     event.stopPropagation();
     event.preventDefault();
-    console.log('Поисковый запрос: ' + inputValue);
+    setCatalogItems([...catalogData].filter((item) => {
+      return item.name.toLowerCase().includes(inputValue.toLowerCase());
+    }));
   };
 
+  // TODO: продумать как лучше сделать поиск + сортировку и их работу в тандеме, возможно надо вынести state
+  //  для input в каталог
+
+  /**
+   * Отсортировать каталог
+   * @param direction - Направление сортировки (по убыванию/возрастанию/по умолчанию)
+   * @param sign - Признак сортировки: по цене/по наименованию
+   */
   const handleSortingChange = (direction: number, sign: TSign): void => {
     setSortSettings({
       ...defaultSortSetting,
@@ -50,14 +64,18 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
         <h1 className="title">{partName}</h1>
         <CloseButton onClick={closeCallback} className="top-right-corner"/>
         <SearchPanel onSubmitForm={handleSearchQuery}/>
-        <SortPanel
-          onChangeSorting={handleSortingChange}
-          sortSettings={sortSettings}
-        />
+
+        {!!catalogItems.length &&
+            <SortPanel
+                onChangeSorting={handleSortingChange}
+                sortSettings={sortSettings}
+            />
+        }
+
         <ItemsList
           catalogItems={catalogItems}
           selectCallback={selectCallback}
-          itemsCount={6}
+          itemsCount={ItemsCountPerPage}
         />
       </div>
     </div>
