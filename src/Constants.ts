@@ -49,22 +49,25 @@ export function SortDirectionIterator(): {next: () => number, reset: () => void}
 
 /**
  * Отсортировать массив объектов по возрастанию / убыванию
- * (если передается направление 0 - массив не сортируется и возвращается в исходном виде)
  * @param array - Массив объектов
  * @param key - Ключ объекта по которому происходит сравнение в сортировке
  * @param direction - Направление сортировки. Если > 0 - сортировка по возрастанию, если < 0 - по убыванию
  */
 export function sortObjectsArray<T, K extends keyof T>(array: T[], key: K, direction: number): T[] {
-  if (!direction) {
-    return array;
-  }
-
   return [...array].sort((current, next) => {
-    if (current[key] > next[key]) {
+    let currentEl = current[key] as string | number;
+    let nextEl = next[key] as string | number;
+
+    if (typeof currentEl === 'string' && typeof nextEl === 'string') {
+      currentEl = currentEl.toLowerCase();
+      nextEl = nextEl.toLowerCase();
+    }
+
+    if (currentEl > nextEl) {
       return direction;
     }
 
-    if (current[key] < next[key]) {
+    if (currentEl < nextEl) {
       return -direction;
     }
 

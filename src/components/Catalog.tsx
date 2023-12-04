@@ -3,7 +3,6 @@ import {IItemData} from "../interfaces/Interfaces";
 import CloseButton from "./UI/buttons/CloseButton";
 import SearchPanel from "./UI/SearchPanel";
 import SortPanel from "./UI/SortPanel";
-import CatalogItem from "./List/CatalogItem";
 import './Catalog.css';
 import {ISortSettings, NameSign, PriceSign, SortDirectionId, sortObjectsArray, TSign} from "../Constants";
 import ItemsList from "./ItemsList";
@@ -26,6 +25,8 @@ const ItemsCountPerPage = 6;
 export default function Catalog({catalogData, partName, closeCallback, selectCallback}: ICatalogProps): ReactElement {
   // Настройки сортировки
   const [sortSettings, setSortSettings] = useState<ISortSettings>(defaultSortSetting);
+  // TODO: придумать что-то лучше, чем 2 state
+  const [filteredItems, setFilteredItems] = useState<IItemData[]>(catalogData);
   const [catalogItems, setCatalogItems] = useState<IItemData[]>(catalogData);
 
   /**
@@ -37,13 +38,12 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
     // TODO: доработать панель поиска, чтобы можно было осуществить сброс нажатием на крестик
     event.stopPropagation();
     event.preventDefault();
-    setCatalogItems([...catalogData].filter((item) => {
+    const searchItems = [...catalogData].filter((item) => {
       return item.name.toLowerCase().includes(inputValue.toLowerCase());
-    }));
+    });
+    setFilteredItems(searchItems);
+    setCatalogItems(searchItems);
   };
-
-  // TODO: продумать как лучше сделать поиск + сортировку и их работу в тандеме, возможно надо вынести state
-  //  для input в каталог
 
   /**
    * Отсортировать каталог
@@ -55,7 +55,13 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
       ...defaultSortSetting,
       [sign]: direction
     });
-    setCatalogItems(sortObjectsArray<IItemData, TSign>(catalogData, sign, direction));
+
+    // Если направление сортировки по умолчанию то элементы устанавливаются в порядке указанном в JSON
+    if (direction === 0) {
+      setCatalogItems(filteredItems);
+    } else {
+      setCatalogItems(sortObjectsArray<IItemData, TSign>(filteredItems, sign, direction));
+    }
   }
 
   return (
@@ -64,14 +70,12 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
         <h1 className="title">{partName}</h1>
         <CloseButton onClick={closeCallback} className="top-right-corner"/>
         <SearchPanel onSubmitForm={handleSearchQuery}/>
-
         {!!catalogItems.length &&
             <SortPanel
                 onChangeSorting={handleSortingChange}
                 sortSettings={sortSettings}
             />
         }
-
         <ItemsList
           catalogItems={catalogItems}
           selectCallback={selectCallback}

@@ -6,3 +6,17 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.sort-button.ascending::after {
+    content: '➤';
+    transform: rotate(270deg);
+    display: inline-block;
+    font-size: 15px;
+}
+
+.sort-button.descending::after {
+    content: '➤';
+    transform: rotate(90deg);
+    display: inline-block;
+    font-size: 15px;
+}

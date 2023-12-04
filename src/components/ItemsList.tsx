@@ -12,14 +12,16 @@ interface IProps {
 
 /**
  * Контейнер, который постранично разбивает переданный в него массив элементов
- * @param children - Переданный массив элементов
- * @param catalogItems -
- * @param itemsCount
+ * @param catalogItems - Переданный массив элементов
+ * @param itemsCount - Количество элементов на одной странице
+ * @param selectCallback - Коллбек на выбор конкретного элемента
  * @constructor
  */
 export default function ItemsList({catalogItems, itemsCount, selectCallback}: IProps): ReactElement {
+  // Текущая страница
   const [page, setPage] = useState<number>(0);
 
+  // Список элементов с постраничной разбивкой
   const paginatedItems = useMemo<IItemData[][]>(() => {
     return splitItems<IItemData>(catalogItems, itemsCount);
   }, [catalogItems]);
@@ -41,7 +43,7 @@ export default function ItemsList({catalogItems, itemsCount, selectCallback}: IP
         ?
         <>
           {paginatedItems[page].map((item) => {
-            // TODO: в JSON файлы с деталями засунуть дополнительное поле id
+            // TODO: в JSON файлы с деталями засунуть дополнительное поле id и использовать тут как key
             return (
               <CatalogItem
                 key={item.name + item.price}
@@ -50,31 +52,51 @@ export default function ItemsList({catalogItems, itemsCount, selectCallback}: IP
               />
             );
           })}
-
-          {/*TODO: !!!!!!!!!!!!!!!!!!!!!если элеменов на одну страницу, то не показывать кнопку*/}
-
-          <div className="page-selector-panel">
-            {paginatedItems.map((item, index) => {
-              return (
-                <TextButton
-                  onlyText={true}
-                  className={`page-selector ${index === page ? 'selected' : ''}`}
-                  key={index}
-                  caption={`${index + 1}`}
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    handleSelectPage(index);
-                  }}
-                />
-              );
-            })}
-          </div>
+          <PageSelector
+            items={paginatedItems}
+            page={page}
+            selectPageCallback={handleSelectPage}
+          />
         </>
         :
         <div className="dummy">
           По вашему запросу ничего не найдено :(
         </div>
       }
+    </div>
+  );
+}
+
+interface IPageSelector {
+  items: IItemData[][];
+  page: number;
+  selectPageCallback: (pageIndex: number) => void;
+}
+
+/**
+ * Селектор страницы
+ * @param items
+ * @param page
+ * @param selectPageCallback
+ * @constructor
+ */
+function PageSelector({items, page, selectPageCallback}: IPageSelector): ReactElement {
+  return (
+    <div className="page-selector-panel">
+      {items.length > 1 &&
+        items.map((item, index) => {
+          return (
+            <TextButton
+              onlyText={true}
+              className={`page-selector ${index === page ? 'selected' : ''}`}
+              key={index}
+              caption={`${index + 1}`}
+              onClick={(event) => {
+                selectPageCallback(index);
+              }}
+            />
+          );
+        })}
     </div>
   );
 }
