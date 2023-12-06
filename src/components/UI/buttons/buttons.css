@@ -1,6 +1,4 @@
 .close-button {
-    width: 30px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +6,16 @@
     opacity: 0.5;
     background: none;
     border: none;
+}
+
+.close-button.default {
+    width: 30px;
+    height: 30px;
+}
+
+.close-button.small {
+    width: 20px;
+    height: 20px;
 }
 
 .close-button:hover {
@@ -21,6 +29,12 @@
     width: 4px;
     background-color: teal;
 }
+
+.close-button.small:before, .close-button.small:after {
+    height: 20px;
+    width: 2px;
+}
+
 .close-button:before {
     transform: rotate(45deg);
 }

@@ -9,6 +9,7 @@ form {
 
 input {
     font-size: 15px;
+    /*вынести длину в общую переменную и кнопку сброса рисовать в зависсимости от неё*/
     width: 540px;
     height: 29px;
     border-radius: 4px;
@@ -16,6 +17,11 @@ input {
     box-shadow: 0 0 3px 1px gray;
     border: none;
     outline: none;
+}
+
+.reset-button {
+    position: absolute;
+    left: 530px;
 }
 
 input:focus {

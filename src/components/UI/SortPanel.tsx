@@ -18,6 +18,8 @@ const PriceDirection = SortDirectionIterator();
  * @constructor
  */
 export default function SortPanel({onChangeSorting, sortSettings}: IProps): ReactElement {
+  // TODO: пофиксить что состояние не сбрасывается у экземпляров класса сортировок, если пришли новые настройки
+
   return (
     <div className="sort-container">
       <SortButton

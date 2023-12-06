@@ -29,18 +29,16 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
   const [filteredItems, setFilteredItems] = useState<IItemData[]>(catalogData);
   const [catalogItems, setCatalogItems] = useState<IItemData[]>(catalogData);
 
+  // TODO: перенести сортировку и фильтрацию нахер в отдельный файл имитирующий работу бэка (а потом в бэк)
   /**
    * Выполнить поисковый запрос
-   * @param event
    * @param inputValue
    */
-  const handleSearchQuery = (event: FormEvent<HTMLElement>, inputValue: string) => {
-    // TODO: доработать панель поиска, чтобы можно было осуществить сброс нажатием на крестик
-    event.stopPropagation();
-    event.preventDefault();
+  const handleSearchQuery = (inputValue: string) => {
     const searchItems = [...catalogData].filter((item) => {
       return item.name.toLowerCase().includes(inputValue.toLowerCase());
     });
+    setSortSettings({...defaultSortSetting});
     setFilteredItems(searchItems);
     setCatalogItems(searchItems);
   };
@@ -69,7 +67,7 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
       <div className="catalog">
         <h1 className="title">{partName}</h1>
         <CloseButton onClick={closeCallback} className="top-right-corner"/>
-        <SearchPanel onSubmitForm={handleSearchQuery}/>
+        <SearchPanel makeSearchQuery={handleSearchQuery}/>
         {!!catalogItems.length &&
             <SortPanel
                 onChangeSorting={handleSortingChange}
