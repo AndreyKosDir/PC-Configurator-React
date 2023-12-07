@@ -43,16 +43,4 @@ body {
   border: red 2px solid;
 }
 
-.item {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: aqua 1px solid;
-}
 
-.item-container {
-  padding-top: 5px;
-  width: 350px;
-}

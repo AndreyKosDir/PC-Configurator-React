@@ -19,6 +19,9 @@ export type TItemsData = {
 export const DetailsContext = createContext({});
 
 function  App({dataLoader}: {dataLoader: DataLoader}) {
+  // TODO: тут вообще хер пойми что переделать нахер
+  //  слишком много state и надо добавлять будет ещё (для id выбранной детали например)
+  //  можно заюзать контекст, чтобы прокинуть колбек на выбор детали из каталога
   const detailsViewData = dataLoader.getPartsViewData();
   const [totalSum, setTotalSum] = useState(0);
   // Данные по выбранным деталям из каталога
@@ -46,7 +49,7 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
   }
 
   const selectCallback = (item: IItemData): void => {
-    console.log(item);
+    // setItemsData();
     setCatalogData(null);
   }
 

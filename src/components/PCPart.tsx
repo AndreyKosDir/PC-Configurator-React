@@ -1,5 +1,6 @@
 import {ReactElement} from 'react';
 import {IItemData} from '../interfaces/Interfaces';
+import './PCPart.css';
 
 interface IProps {
   data?: IItemData;
@@ -11,12 +12,10 @@ interface IProps {
 // возможно сразу стоит использовать контекст в App для передачи данных сюда из каталога
 
 export default function PCPart({data, partId, partName, openCatalog}: IProps): ReactElement {
-
-
   return (
     <div className="item-container">
-      <p>{partName}</p>
-      <div className="item">
+      <p className="head">{partName}</p>
+      <div className={`item ${data ? 'active' : 'notActive'}`}>
         {
           data
             ?
@@ -26,7 +25,7 @@ export default function PCPart({data, partId, partName, openCatalog}: IProps): R
               <div>{data.price}</div>
             </div>
             :
-            <button onClick={() => {
+            <button className="cross" onClick={() => {
               openCatalog(partId, partName);
             }}>
               +

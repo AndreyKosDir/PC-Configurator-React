@@ -1,0 +1,137 @@
+.item {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: aqua 1px solid;*/
+}
+
+.item-container {
+    padding-top: 5px;
+    width: 350px;
+}
+
+.head {
+    height: 30px;
+    display: flex;
+    align-self: start;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.active, .notActive {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.notActive {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    box-shadow: 0 0 3px 1px gray;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.notActive:hover {
+    box-shadow: 0 0 3px 1px teal;
+    transform: scale(1.01);
+}
+
+/* TODO: Херь какая-то переверстать надо чтобы крест рисовался за счет css*/
+/*  вообще этот элемент переверстать весь и стили переделать, а то говно*/
+.cross {
+    opacity: 0.5;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    border: none;
+    background-color: unset;
+}
+
+.cross:before, .cross:after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 4px;
+    background-color: gray;
+    transition: transform 0.5s;
+}
+
+.cross:after {
+    transform: rotate(90deg);
+}
+
+.notActive:hover .cross {
+    box-shadow: 0 0 3px 2px teal;
+    transform: scale(1.25);
+}
+
+.notActive:hover .cross:before, .notActive:hover .cross:after {
+    background-color: teal;
+}
+
+.notActive:hover .cross:after {
+    background-color: teal;
+}
+
+.active {
+    display: grid;
+    grid-template:
+                "img name close"
+                "img price price";
+    box-shadow: 0 0 5px 2px teal;
+    font-size: 18px;
+}
+
+.active .name, .active .price {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-weight: bold;
+}
+
+.img {
+    grid-area: img;
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    -webkit-user-drag: none;
+    object-fit: contain;
+}
+
+.name {
+    grid-area: name;
+    width: 265px;
+    align-items: start;
+}
+
+.name span {
+    margin: 5px 5px 0 5px;
+    text-align: center;
+}
+
+.price {
+    grid-area: price;
+    width: 295px;
+    color: teal;
+    align-items: center;
+    font-size: 20px;
+}
+
+.price span {
+    transition: font-size 0.5s;
+}
+
+.active:hover .price span {
+    text-shadow: 1px 1px black;;
+    font-size: 22px;
+}
