@@ -1,137 +1,120 @@
-.item {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*border: aqua 1px solid;*/
-}
-
-.item-container {
-    padding-top: 5px;
+/*TODO: в других файлах сделать тоже стили изолированные*/
+.PCPart_item-container {
+    padding-top: 10px;
     width: 350px;
 }
 
-.head {
-    height: 30px;
-    display: flex;
-    align-self: start;
+.PCPart_head {
     font-size: 25px;
     padding-left: 20px;
 }
 
-.active, .notActive {
+.PCPart_empty-container, .PCPart_item {
+    height: 100px;
+    width: 100%;
+    display: flex;
     border-radius: 10px;
     overflow: hidden;
     margin-top: 5px;
 }
 
-.notActive {
-    background-color: white;
-    display: flex;
+.PCPart_empty-container {
     align-items: center;
     justify-content: center;
-    color: gray;
+    background-color: white;
     box-shadow: 0 0 3px 1px gray;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.1s;
 }
 
-.notActive:hover {
+.PCPart_empty-container:hover {
     box-shadow: 0 0 3px 1px teal;
-    transform: scale(1.01);
+    transform: scale(1.01, 1.01);
 }
 
-/* TODO: Херь какая-то переверстать надо чтобы крест рисовался за счет css*/
-/*  вообще этот элемент переверстать весь и стили переделать, а то говно*/
-.cross {
-    opacity: 0.5;
+.PCPart_empty-item {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 50%;
     transition: transform 0.5s;
-    border: none;
-    background-color: unset;
 }
 
-.cross:before, .cross:after {
+.PCPart_empty-item::after, .PCPart_empty-item::before {
     position: absolute;
     content: '';
-    height: 30px;
+    height: 28px;
     width: 4px;
+    margin: 4px 0 0 16px;
     background-color: gray;
-    transition: transform 0.5s;
 }
 
-.cross:after {
+.PCPart_empty-item::before {
     transform: rotate(90deg);
 }
 
-.notActive:hover .cross {
+.PCPart_empty-container:hover .PCPart_empty-item {
     box-shadow: 0 0 3px 2px teal;
     transform: scale(1.25);
 }
 
-.notActive:hover .cross:before, .notActive:hover .cross:after {
+.PCPart_empty-container:hover .PCPart_empty-item::before,
+.PCPart_empty-container:hover .PCPart_empty-item::after {
     background-color: teal;
 }
 
-.notActive:hover .cross:after {
-    background-color: teal;
-}
-
-.active {
-    display: grid;
-    grid-template:
-                "img name close"
-                "img price price";
-    box-shadow: 0 0 5px 2px teal;
-    font-size: 18px;
-}
-
-.active .name, .active .price {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    font-weight: bold;
-}
-
-.img {
-    grid-area: img;
-    width: 100px;
-    height: 100px;
-    margin-left: 5px;
-    -webkit-user-drag: none;
-    object-fit: contain;
-}
-
-.name {
-    grid-area: name;
-    width: 265px;
-    align-items: start;
-}
-
-.name span {
-    margin: 5px 5px 0 5px;
-    text-align: center;
-}
-
-.price {
-    grid-area: price;
-    width: 295px;
-    color: teal;
+.PCPart_item {
     align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 3px 1px teal;
+    border-radius: 10px;
+}
+
+.PCPart_item:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 128, 128, 0.8);
+}
+
+.PCPart_item img {
+    height: 95px;
+    width: 95px;
+    padding-left: 5px;
+    flex-shrink: 0;
+}
+
+.PCPart_right-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.PCPart_right-section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.PCPart_reset-btn {
+    margin-right: 2px;
+    margin-left: 5px;
+}
+
+.PCPart_name {
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.PCPart_price {
+    text-align: center;
+    margin-bottom: 5px;
     font-size: 20px;
+    color: teal;
 }
 
-.price span {
-    transition: font-size 0.5s;
-}
-
-.active:hover .price span {
-    text-shadow: 1px 1px black;;
-    font-size: 22px;
-}

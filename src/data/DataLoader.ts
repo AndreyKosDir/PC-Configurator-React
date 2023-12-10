@@ -1,4 +1,5 @@
 import {IItemData} from "../interfaces/Interfaces";
+import {TPartId} from '../Constants';
 
 export interface IDataLoader {
   // getDetailsNames(): TDetailKey[];
@@ -7,7 +8,7 @@ export interface IDataLoader {
   loadPCPartData(partId: TPartId): Promise<IItemData[]>;
 }
 
-const PartsDataConfig = {
+const PartsDataConfig: Record<TPartId, string> = {
   case: './data/Items/case.json',
   cpu: './data/Items/cpu.json',
   fan: './data/Items/fan.json',
@@ -18,8 +19,6 @@ const PartsDataConfig = {
   ssd: './data/Items/ssd.json',
   videoCard: './data/Items/videoCard.json'
 };
-
-export type TPartId = keyof typeof PartsDataConfig;
 
 export interface IPartViewData {
   id: TPartId;

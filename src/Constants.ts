@@ -74,3 +74,17 @@ export function sortObjectsArray<T, K extends keyof T>(array: T[], key: K, direc
     return 0;
   });
 }
+
+export const PartNames: Record<string, string> = {
+  case: 'Корпус',
+  cpu: 'Процессор',
+  fan: 'Кулер',
+  hardDisk: 'Жесткий диск',
+  motherBoard: 'Материнская плата',
+  powerBank: 'Блок питания',
+  ramMemory: 'Оперативная память',
+  ssd: 'SSD',
+  videoCard: 'Видеокарта'
+}
+
+export type TPartId = keyof typeof PartNames;

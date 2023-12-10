@@ -1,7 +1,8 @@
 import React, {createContext, useState} from 'react';
 import './App.css';
 import PartsPanel from './components/PartsPanel';
-import DataLoader, {TPartId} from './data/DataLoader';
+import DataLoader from './data/DataLoader';
+import {TPartId, PartNames} from './Constants';
 import {IItemData} from "./interfaces/Interfaces";
 import Catalog from "./components/Catalog";
 
@@ -28,35 +29,47 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
   const [itemsData, setItemsData] = useState<TItemsData>(  {});
   // Данные по конкретной детали для каталога
   const [catalogData, setCatalogData] = useState<IItemData[] | null>(null);
-  const [currentPartName, setCurrentPartName] = useState('');
+  const [currentPartId, setCurrentPartId] = useState<TPartId>('');
 
   /**
    * Обработчик открытия каталога с данными по конкретной детали
    * @param id
-   * @param name
    */
-  const handleOpenCatalog = async (id: TPartId, name: string): Promise<void> => {
+  const handleOpenCatalog = async (id: TPartId): Promise<void> => {
     setCatalogData(await dataLoader.loadPCPartData(id));
-    setCurrentPartName(name);
-  }
+    setCurrentPartId(id);
+  };
+
+  const handleResetDetail = (id: TPartId): void => {
+    const newItemsData = {
+      ...itemsData
+    };
+    delete newItemsData[currentPartId];
+    setItemsData(newItemsData);
+  };
 
   /**
    * Обработчик закрытия каталога
    */
   const handleCloseCatalog = (): void => {
     setCatalogData(null);
-    setCurrentPartName('');
-  }
+    setCurrentPartId('');
+  };
 
-  const selectCallback = (item: IItemData): void => {
-    // setItemsData();
+  const selectCallback = (itemData: IItemData): void => {
+    setItemsData({
+      ...itemsData,
+      [currentPartId]: itemData
+    });
     setCatalogData(null);
-  }
+  };
 
+  // TODO: параметр name - вообще убрать из данных по PCPart - брать его из констант в зависсимости от поля id
   return (
     <div id="wrapper">
       <h1>Конфигуратор ПК</h1>
       <PartsPanel
+        resetDetailData={handleResetDetail}
         openCatalog={handleOpenCatalog}
         parts={detailsViewData}
         itemsData={itemsData}
@@ -67,7 +80,7 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
 
       {catalogData &&
         <Catalog
-            partName={currentPartName}
+            partName={PartNames[currentPartId]}
             catalogData={catalogData}
             closeCallback={handleCloseCatalog}
             selectCallback={selectCallback}
