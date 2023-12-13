@@ -26,7 +26,12 @@ export interface ISortSettings {
   [PriceSign]: typeof SortDirectionId[TDirection];
 }
 
-export function SortDirectionIterator(): {next: () => number, reset: () => void} {
+export interface IIterator {
+  next: () => number,
+  reset: () => void
+}
+
+export function SortDirectionIterator(): IIterator {
   const valuesArray = Object.values(SortDirectionId) as number[];
   let index = 0;
 

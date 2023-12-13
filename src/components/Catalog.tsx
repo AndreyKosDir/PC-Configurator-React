@@ -1,4 +1,4 @@
-import {FormEvent, ReactElement, useState} from "react";
+import {FormEvent, ReactElement, useState, useMemo} from "react";
 import {IItemData} from "../interfaces/Interfaces";
 import CloseButton from "./UI/buttons/CloseButton";
 import SearchPanel from "./UI/SearchPanel";
@@ -6,6 +6,7 @@ import SortPanel from "./UI/SortPanel";
 import './Catalog.css';
 import {ISortSettings, NameSign, PriceSign, SortDirectionId, sortObjectsArray, TSign} from "../Constants";
 import ItemsList from "./ItemsList";
+import SortController, {ISortController} from "../helpers/SortController";
 
 interface ICatalogProps {
   catalogData: IItemData[];
@@ -25,11 +26,12 @@ const ItemsCountPerPage = 6;
 export default function Catalog({catalogData, partName, closeCallback, selectCallback}: ICatalogProps): ReactElement {
   // Настройки сортировки
   const [sortSettings, setSortSettings] = useState<ISortSettings>(defaultSortSetting);
-  // TODO: придумать что-то лучше, чем 2 state
   const [filteredItems, setFilteredItems] = useState<IItemData[]>(catalogData);
   const [catalogItems, setCatalogItems] = useState<IItemData[]>(catalogData);
 
-  // TODO: перенести сортировку и фильтрацию нахер в отдельный файл имитирующий работу бэка (а потом в бэк)
+  const sortController = useMemo<ISortController>(() => new SortController(), []);
+
+  // TODO: перенести сортировку и фильтрацию в отдельный файл имитирующий работу бэка
   /**
    * Выполнить поисковый запрос
    * @param inputValue
@@ -38,6 +40,7 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
     const searchItems = [...catalogData].filter((item) => {
       return item.name.toLowerCase().includes(inputValue.toLowerCase());
     });
+    sortController.resetAll();
     setSortSettings({...defaultSortSetting});
     setFilteredItems(searchItems);
     setCatalogItems(searchItems);
@@ -70,6 +73,7 @@ export default function Catalog({catalogData, partName, closeCallback, selectCal
         <SearchPanel makeSearchQuery={handleSearchQuery}/>
         {!!catalogItems.length &&
             <SortPanel
+                sortController={sortController}
                 onChangeSorting={handleSortingChange}
                 sortSettings={sortSettings}
             />

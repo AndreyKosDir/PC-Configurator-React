@@ -1,4 +1,4 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useCallback, useState} from 'react';
 import './App.css';
 import PartsPanel from './components/PartsPanel';
 import DataLoader from './data/DataLoader';
@@ -14,14 +14,13 @@ import Catalog from "./components/Catalog";
  * Данные по выбранным деталям из каталога
  */
 export type TItemsData = {
-  [id in TPartId]?: IItemData;
+  [id in Partial<TPartId>]: IItemData;
 };
 
 export const DetailsContext = createContext({});
 
 function  App({dataLoader}: {dataLoader: DataLoader}) {
   // TODO: тут вообще хер пойми что переделать нахер
-  //  слишком много state и надо добавлять будет ещё (для id выбранной детали например)
   //  можно заюзать контекст, чтобы прокинуть колбек на выбор детали из каталога
   const detailsViewData = dataLoader.getPartsViewData();
   const [totalSum, setTotalSum] = useState(0);
@@ -40,13 +39,19 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
     setCurrentPartId(id);
   };
 
-  const handleResetDetail = (id: TPartId): void => {
+  /**
+   * Обработчик отмены выбора детали
+   * @param id
+   */
+  const handleResetDetail = useCallback((id: TPartId): void => {
+    const deductiblePrice = itemsData[id].price;
+    setTotalSum(Math.round(totalSum - deductiblePrice));
     const newItemsData = {
       ...itemsData
     };
-    delete newItemsData[currentPartId];
+    delete newItemsData[id];
     setItemsData(newItemsData);
-  };
+  }, [totalSum]);
 
   /**
    * Обработчик закрытия каталога
@@ -56,7 +61,12 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
     setCurrentPartId('');
   };
 
+  /**
+   * Обработчик выбора детали из каталога
+   * @param itemData
+   */
   const selectCallback = (itemData: IItemData): void => {
+    setTotalSum(Math.round(totalSum + itemData.price));
     setItemsData({
       ...itemsData,
       [currentPartId]: itemData
@@ -68,15 +78,19 @@ function  App({dataLoader}: {dataLoader: DataLoader}) {
   return (
     <div id="wrapper">
       <h1>Конфигуратор ПК</h1>
-      <PartsPanel
-        resetDetailData={handleResetDetail}
-        openCatalog={handleOpenCatalog}
-        parts={detailsViewData}
-        itemsData={itemsData}
-      />
-      <h1>
-        Итого: {totalSum}
-      </h1>
+      <div className="main-content">
+        <div className="result-info">
+          <h1>
+            Итого: {totalSum + ' ₽'}
+          </h1>
+        </div>
+        <PartsPanel
+          resetDetailData={handleResetDetail}
+          openCatalog={handleOpenCatalog}
+          parts={detailsViewData}
+          itemsData={itemsData}
+        />
+      </div>
 
       {catalogData &&
         <Catalog

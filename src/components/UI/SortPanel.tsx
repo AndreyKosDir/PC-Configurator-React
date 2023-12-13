@@ -1,33 +1,31 @@
 import {MouseEventHandler, ReactElement} from "react";
 import './SortPanel.css';
 import TextButton from "./buttons/TextButton";
-import {NameSign, PriceSign, SortDirectionIterator, TSign, ISortSettings, SortDirectionId} from "../../Constants";
+import {NameSign, PriceSign, TSign, ISortSettings, SortDirectionId} from "../../Constants";
+import {ISortController} from '../../helpers/SortController';
 
 interface IProps {
   onChangeSorting: (direction: number, sign: TSign) => void;
   sortSettings: ISortSettings;
+  sortController: ISortController;
 }
-
-const NameDirection = SortDirectionIterator();
-const PriceDirection = SortDirectionIterator();
 
 /**
  * Панель фильтров с сортировкой по Названию и Цене
  * @param onChangeSorting
  * @param sortSettings
+ * @param sortController
  * @constructor
  */
-export default function SortPanel({onChangeSorting, sortSettings}: IProps): ReactElement {
-  // TODO: пофиксить что состояние не сбрасывается у экземпляров класса сортировок, если пришли новые настройки
-
+export default function SortPanel({onChangeSorting, sortSettings, sortController}: IProps): ReactElement {
   return (
     <div className="sort-container">
       <SortButton
         caption="Название"
         tooltip="Сортировка по названию"
         onClick={(event) => {
-          PriceDirection.reset();
-          onChangeSorting(NameDirection.next(), NameSign);
+          sortController.resetPriceIterator();
+          onChangeSorting(sortController.changeNameDirection(), NameSign);
         }}
         direction={sortSettings.name}
       />
@@ -35,8 +33,8 @@ export default function SortPanel({onChangeSorting, sortSettings}: IProps): Reac
         caption="Цена"
         tooltip="Сортировка по цене"
         onClick={(event) => {
-          NameDirection.reset();
-          onChangeSorting(PriceDirection.next(), PriceSign);
+          sortController.resetNameIterator();
+          onChangeSorting(sortController.changePriceDirection(), PriceSign);
         }}
         direction={sortSettings.price}
       />

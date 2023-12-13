@@ -1,7 +1,7 @@
-import {ReactElement, PropsWithoutRef} from 'react';
+import {ReactElement} from 'react';
 import {IPartViewData} from '../data/DataLoader';
 import PCPart from "./PCPart";
-import {IItemData} from "../interfaces/Interfaces";
+
 import {TItemsData} from "../App";
 
 interface IProps {
@@ -17,7 +17,6 @@ export default function PartsPanel({parts, openCatalog, itemsData, resetDetailDa
       {
         parts.map((partData) => {
           return (
-            // TODO: мб прокидывать пропсы просто как {...props}
             <PCPart
               key={partData.id}
               partId={partData.id}
